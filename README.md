@@ -232,7 +232,7 @@ Demand_Forecasting_Project/
 ├── requirements.txt
 ├── README.md
 ├── LICENSE
-└── .gitignore
+
 ```
 
 ---

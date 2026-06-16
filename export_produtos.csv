@@ -1,0 +1,51 @@
+﻿id_produto;nome;categoria;classe_abc;lead_time_estimado;custo_unitario
+1;Produto 1;Materia-Prima;B;16;56.99
+2;Produto 2;Embalagem;C;16;463.8
+3;Produto 3;Produto Acabado;B;7;386.33
+4;Produto 4;Produto Acabado;C;19;368.94
+5;Produto 5;Materia-Prima;B;17;202.11
+6;Produto 6;Embalagem;C;4;124.44
+7;Produto 7;Embalagem;B;2;496.03
+8;Produto 8;Produto Acabado;C;3;454.59
+9;Produto 9;Produto Acabado;B;3;94.84
+10;Produto 10;Embalagem;B;10;123.62
+11;Produto 11;Produto Acabado;B;15;486.81
+12;Produto 12;Materia-Prima;B;14;241.47
+13;Produto 13;Materia-Prima;B;12;132.23
+14;Produto 14;Materia-Prima;C;18;333.65
+15;Produto 15;Embalagem;B;16;75.14
+16;Produto 16;Embalagem;C;14;321.27
+17;Produto 17;Materia-Prima;A;8;474.19
+18;Produto 18;Produto Acabado;C;9;91.31
+19;Produto 19;Materia-Prima;B;9;222.42
+20;Produto 20;Produto Acabado;C;4;476.17
+21;Produto 21;Materia-Prima;B;19;222.94
+22;Produto 22;Materia-Prima;A;10;480.92
+23;Produto 23;Produto Acabado;A;3;406.75
+24;Produto 24;Embalagem;A;13;453.28
+25;Produto 25;Materia-Prima;A;14;307.08
+26;Produto 26;Produto Acabado;C;10;338.84
+27;Produto 27;Materia-Prima;A;15;195.31
+28;Produto 28;Produto Acabado;C;18;322.82
+29;Produto 29;Embalagem;C;13;374.19
+30;Produto 30;Produto Acabado;C;20;145.81
+31;Produto 31;Embalagem;C;11;446.79
+32;Produto 32;Materia-Prima;C;11;459.46
+33;Produto 33;Produto Acabado;C;5;126.19
+34;Produto 34;Embalagem;A;10;135.4
+35;Produto 35;Embalagem;A;16;78.43
+36;Produto 36;Produto Acabado;B;3;275.32
+37;Produto 37;Produto Acabado;C;3;344.21
+38;Produto 38;Materia-Prima;A;17;483.14
+39;Produto 39;Materia-Prima;B;19;361.44
+40;Produto 40;Embalagem;B;10;336.35
+41;Produto 41;Produto Acabado;B;15;452.09
+42;Produto 42;Produto Acabado;B;15;354.38
+43;Produto 43;Embalagem;C;20;155.96
+44;Produto 44;Produto Acabado;B;10;147.09
+45;Produto 45;Materia-Prima;C;2;84.69
+46;Produto 46;Materia-Prima;A;18;370.32
+47;Produto 47;Embalagem;C;20;330.96
+48;Produto 48;Produto Acabado;C;19;45.9
+49;Produto 49;Materia-Prima;B;10;313.83
+50;Produto 50;Produto Acabado;B;19;381.97

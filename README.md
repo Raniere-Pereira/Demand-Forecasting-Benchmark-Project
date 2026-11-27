@@ -313,9 +313,7 @@ Data Analyst | Supply Chain Analytics | Data Science
 
 ### Contact
 
-GitHub: https://github.com/yourusername
-
-LinkedIn: https://linkedin.com/in/yourprofile
+LinkedIn: https://linkedin.com/in/raniere-pereira-de-paula
 
 ---
 

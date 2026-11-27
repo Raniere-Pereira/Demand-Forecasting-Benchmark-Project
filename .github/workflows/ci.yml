@@ -1,0 +1,57 @@
+name: Benchmark CI
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test-and-validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest
+
+      - name: Validate requirements.txt (no stdlib packages)
+        run: |
+          python - << 'EOF'
+          import pathlib, sys
+          reqs = [
+              line.strip().lower()
+              for line in pathlib.Path("requirements.txt").read_text(encoding="utf-8").splitlines()
+              if line.strip() and not line.strip().startswith("#")
+          ]
+          if any(r == "sqlite3" or r.startswith("sqlite3=") for r in reqs):
+              print("ERROR: sqlite3 is part of the Python standard library and must not be in requirements.txt")
+              sys.exit(1)
+          print("OK: requirements.txt validated.")
+          EOF
+
+      - name: Validate Jupyter notebooks JSON structure
+        run: |
+          python - << 'EOF'
+          import json, pathlib
+          nbs = sorted(pathlib.Path(".").rglob("*.ipynb"))
+          assert nbs, "No notebooks found"
+          for nb in nbs:
+              data = json.loads(nb.read_text(encoding="utf-8"))
+              assert "cells" in data, f"Invalid notebook: {nb}"
+              print(f"OK: {nb} ({len(data['cells'])} cells)")
+          EOF
+
+      - name: Run unit tests (pytest)
+        env:
+          PYTHONPATH: "."
+        run: pytest -v
